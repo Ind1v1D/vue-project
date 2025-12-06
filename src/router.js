@@ -5,13 +5,13 @@ import AboutPage from './pages/AboutPage.vue'
 import Loginpage from './pages/Loginpage.vue'
 import SigninPage from './pages/SigninPage.vue'
 
-
 const routes = [
   { path: '/', component: HomePage },
   { path: '/movie/:id', component: MovieDetail, props: true },
   { path: '/about', component: AboutPage },
   { path: '/login', component: Loginpage },
-  { path: '/signin', component: SigninPage }
+  { path: '/signin', component: SigninPage },
+  { path: '/about', component: AboutPage } 
 ]
 
 export const router = createRouter({

@@ -16,8 +16,12 @@ coverage
 
 /cypress/videos/
 /cypress/screenshots/
+<<<<<<< HEAD
 /node_modules
 
+=======
+node_modules/
+>>>>>>> 2acaac57165f5fd3448cff4db79509515b08158e
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
