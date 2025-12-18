@@ -525,7 +525,7 @@ onMounted(async () => {
 }
 
 .comment-input {
-  width: 100%;
+  width: 95%;
   background: #0a0a0a;
   border: 2px solid #3d3d3d;
   border-radius: 12px;

@@ -107,7 +107,6 @@ const handleLogin = async () => {
   successMessage.value = ''
   loading.value = true
 
-  // Simulate loading
   await new Promise(resolve => setTimeout(resolve, 500))
 
   const result = authStore.login(formData.value)

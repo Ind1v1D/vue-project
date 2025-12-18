@@ -42,21 +42,15 @@ export const router = createRouter({
     routes
 })
 
-// Navigation guard to handle authentication
 router.beforeEach((to, from, next) => {
     const authStore = useAuthStore()
 
-    // If route is for guests only (login/signup) and user is authenticated
     if (to.meta.guestOnly && authStore.isAuthenticated) {
-        // Redirect to home page
         next({ name: 'Home' })
     }
-    // If route requires authentication and user is NOT authenticated
     else if (to.meta.requiresAuth && !authStore.isAuthenticated) {
-        // Redirect to login page
         next({ name: 'Login' })
     }
-    // Otherwise, allow navigation
     else {
         next()
     }

@@ -16,7 +16,6 @@
           <span class="link-underline"></span>
         </router-link>
 
-        <!-- Show user menu if logged in -->
         <div v-if="authStore.isAuthenticated" class="user-menu">
           <div class="user-button" @click="toggleDropdown">
             <div class="user-avatar">
