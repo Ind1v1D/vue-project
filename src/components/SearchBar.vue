@@ -7,9 +7,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref,watch } from 'vue'
 const q = ref('')
 const emit = defineEmits(['search'])
+const search = ref('')
+watch(search, () => {
+  console.log('changed')
+})
 
 function onSubmit() {
   emit('search', q.value.trim())
