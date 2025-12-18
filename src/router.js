@@ -5,6 +5,7 @@ import MovieDetail from './pages/MovieDetail.vue'
 import AboutPage from './pages/AboutPage.vue'
 import Loginpage from './pages/Loginpage.vue'
 import SigninPage from './pages/SigninPage.vue'
+import Fourolfour from './pages/Fourolfour.vue'
 
 const routes = [
     {
@@ -34,6 +35,11 @@ const routes = [
         component: SigninPage,
         name: 'Signin',
         meta: { guestOnly: true }
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'Fourolfour',
+        component: () => import('./pages/Fourolfour.vue')
     }
 ]
 
