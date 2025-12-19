@@ -10,6 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: '/vue-project/',
     test: {
         environment: 'jsdom',
         globals: true,
